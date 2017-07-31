@@ -2,3 +2,18 @@
 	margin-left: 4%;
 	width: 90%;
 }
+
+@mixin colores-contenedores(){
+	h5{
+		color: $color_titulos;
+	}
+	p{
+		color: $color_texto;
+	}
+	span{
+		color: $color_fecha;
+	}
+	hr{
+		color: $color_separador;
+	}
+}

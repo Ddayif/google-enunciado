@@ -1,32 +1,46 @@
 *{
 	margin: 0;
 	padding: 0;
+	font-family: 'Alegreya Sans', sans-serif;
 }
 
+p{
+	color: $color_texto;
+}
+
+h5{
+	color: $color_titulos;
+}
+
+
+/*seccion navbar*/
 .logo{
 	width: 50%;
 	height: 50vh;
 	margin-bottom: -90px;
 }
 
-li{
+.buscador{
+	margin-top: 140px;
+}
+
+.lista{
 	display: inline-block;
 	font-weight: 700;
 	a{
 		color: black;
-		padding: 0 40px;
-		
+		padding: 10px 40px;
 	}
 	a:hover{
 		background-color: rgba(15, 157, 88, 0.57);
-	    padding: 15px;
 	    border-radius: 5px;
 	}
 }
 
 
-
+/*primera seccion*/
 .contenedor-seccion-1{
+	@include colores-contenedores();
 	margin-left: 4%;
 	.imagen-1{
 		background-repeat: no-repeat;
@@ -38,12 +52,15 @@ li{
 }
 
 hr{
-	border-top: 2px solid blue;
+	border-top: 2px solid $color_separador;
 	height: 2%;
 	@include margin-contenedores();
 }
 
+
+/*segunda seccion*/
 .contenedor-seccion-2{
+	@include colores-contenedores();
 	@include margin-contenedores();
 	.imagen-2{
 		width: 75%;
@@ -53,7 +70,14 @@ hr{
 	}
 }
 
+.textos{
+	margin-top: 20px;
+}
+
+
+/*tercera seccion*/
 .contenedor-seccion-3{
+	@include colores-contenedores();
 	@include margin-contenedores();
 	img{
 		width: 90%;
@@ -64,12 +88,12 @@ hr{
 	}
 }
 
-
-
 .margen-img{
 	margin-left: 7%;
 }
 
+
+/*seccion footer*/
 .contenedor-footer{
 	margin-left: 4%;
 	background-color: whitesmoke;
@@ -77,9 +101,8 @@ hr{
 		font-size: 12px;
 	}
 	a{
-			font-size: 12px;
-		}
-
+		font-size: 12px;
+	}
 }
 
 .footer-copyright{
