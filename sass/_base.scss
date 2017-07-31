@@ -1,0 +1,36 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.contenedor-seccion-1{
+	margin-left: 4%;
+}
+
+.imagen-1{
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 95%; 
+	height: 100vh;
+	margin-top: 3%;
+}
+
+.linea{
+	border-top: 2px solid blue;
+	height: 2%;
+	width: 95%;
+}
+
+.contenedor-seccion-2{
+	margin-left: 4%;
+	width: 95%;
+}
+
+.imagen-2{
+	width: 75%;
+}
+
+.contenedor-imagen-3{
+	background-color: rgba(128, 128, 128, 0.37);
+}
